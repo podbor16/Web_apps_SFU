@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="Russian">
+	<head>
+		<!-- Мета теги -->
+		<meta lang="ru"> 
+		<meta charset="UTF-8">
+		<meta name="viewport">
+		<meta name="author" content="Подборский Матвей">
+		<meta name="description" content="Спортивные мероприятия в Красноярске.">
+		<meta name="keywords" content="забег, полумарафон, марафон, столбы, спорт, пробежка, лыжи, триатлон, зимний триатлон">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>KRSK_Sport</title>
+		<link rel="stylesheet" href="CSS/main.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<!--<link rel="stylesheet" href="C://Users/podbo/Web_5/bootstrap-3.4.1/dist/css/bootstrap.css">-->
+	</head>
+	
+	<!-- Тело документа (отображаемый для пользователя контент -->
+	<body>
+	<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				
+				<ul class="nav navbar-nav" id="tree">
+					<li class="active">
+						<a href = "#calendar">Календарь стартов</a>
+					</li>
+					<li>
+						<a href = "#results">Результаты</a>
+					</li>
+					<li>
+						<a href = "#trainings">Тренировки</a>
+					</li>
+					<li>
+						<a href = "#same_sites">Похожие сайты</a>
+					</li>
+					<li>
+						<a href = "#reg_form">Подписка на рассылку</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+	<p class="p_bold">Введите ваши данные:</p>
+	<p>1. Пока вы не введете имя, поля для ввода пароля, email и отправки формы, будут недоступны</p>
+	<p>2. Пока вы не введете все поля, кнопка для отправки формы будет недоступна</p>
+	<p>3. Информация не отправится на сервер, просто форма вернется в изначальное положение</p>
+
+	<form id="myForm">
+
+		<label for="name">Введите Имя:</label><br>
+
+		<input type="text" id="name_10" name="" required><br>
+
+		<label for="email">Почта:</label><br>
+
+		<input type="email" id="email_10" name="email" disabled><br>
+
+		<label for="password">Пароль:</label><br>
+
+		<input type="password" id="password" name="password" disabled><br>
+
+		<input type="submit" id="submitBtn" value="Submit" disabled>
+
+	</form>
+
+	<script src="JS/10_lab.js"></script>
+	<br>
+	<br>
+	<script src="JS/9_lab.js"></script>
+
+
+
+	<div class="JS">
+			<form id="arrayForm">
+				<label for="arrayLength">2.10.21. Введите длину массива:</label>
+				<input type="number" id="arrayLength" name="arrayLength" min="1" required>
+				<button type="submit">Сгенерировать массив</button>
+			</form>
+			<div id="result"></div>
+
+			<script src="JS/6_lab.js"></script>
+
+			<script src="JS/7_lab.js"></script>
+		</div>
+
+
+		<div class="slider">
+			<div class="slider-images">
+				<img src="https://static.tildacdn.com/tild6263-6337-4164-a262-633166383764/y4kI0fupF-A.jpg" alt="Первомайский полумарафон" class="slider-image">
+				<img src="https://optim.tildacdn.com/tild3032-3030-4631-b035-333235636666/-/format/webp/f35W6IJKZY0.jpg" alt="Весна" class="slider-image">
+				<img src="https://optim.tildacdn.com/tild3537-3531-4434-b362-653863643931/-/format/webp/noroot.png" alt="Image 3" class="slider-image">
+				<!-- Добавьте сюда другие изображения -->
+			</div>
+		</div>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				var sliderImages = document.querySelector('.slider-images');
+				var images = document.querySelectorAll('.slider-image');
+				var currentIndex = 0;
+				var intervalTime = 3000; // Интервал между изображениями в миллисекундах
+
+				function slide() {
+					currentIndex = (currentIndex + 1) % images.length;
+					sliderImages.style.transform = `translateX(-${currentIndex * 100}%)`;
+				}
+
+				setInterval(slide, intervalTime);
+			});
+		</script>
+
+
+
+
+		<div class="col-md-12">
+			<h1 href="#">Спортивные мероприятия в городе Красноярске <span class="glyphicon glyphicon-heart"></span></h1>
+		</div>	
+ 		<!-- <div class = header>
+			 <a href = "#calendar">Календарь</a> <a href = "#results">Результаты</a> <a href = "#trainings">Тренировки</a> <a href = "#same_sites">Сайты</a>
+		</div> -->
+		<style>
+			ul {
+				font-style: italic;
+				font-weight: bold;
+			}
+
+			ol {
+				color: yellow;
+			}	
+		</style>
+		
+		
+		<!--<h2 align = left>Оглавление сайта</h2>-->
+		<!-- Неупорядоченный список -->
+		<!-- <ul type="circle">
+			<li><a href = "#calendar">Календарь стартов</a></li>
+			<li><a href = "#results">Результаты</a></li>
+			<li><a href = "#trainigs">Тренировки</a></li>
+			<li><a href = "#same_sites">Сайты с похожей тематикой</a></li>
+		</ul> -->
+		
+		<h2 id = "calendar" align = left>Календарь стартов</h2>
+		<!-- Таблица с предстоящими забегами -->
+		<div class = "table1">
+			<table class="table table-striped" border = 1>
+				<thead align="center">
+					<tr>
+						<th>"Название старта</th>
+						<th>Категория</th>
+						<th>Дистанция</th>
+						<th>Дата проведения</th>
+					</tr>
+				</thead>
+				<tbody align="center">
+					<tr>
+						<td>Дорога к звездам</td>
+						<td>Трейл</td>
+						<td>7 км</td>
+						<td>17.02.2024</td>
+					</tr>
+					<tr>
+						<td>Ниже нуля</td>
+						<td>Велогонка</td>
+						<td>15, 7.5 и 6 км</td>
+						<td>17.02.2024</td>
+					</tr>
+					<tr>
+						<td>Открытый чемпионат и первенство города Красноярска по зимнему триатлону</td>
+						<td>Зимний триатлон</td>
+						<td>3 - 5 - 5 км</td>
+						<td>18.02.2024</td>
+					</tr>
+					<tr>
+						<td>Ski 9ka Tour четвертый этап</td>
+						<td>Лыжи</td><td>20 и 30 км</td>
+						<td>24.02.2024</td>
+					</tr>
+					<tr>
+						<td>Krasnoyarsk Winter Trail Fest</td>
+						<td>трейл</td>
+						<td>4.7, 22, 46 и 105 км</td>
+						<td>24-25.02.2024</td>
+					</tr>
+				</tbody>
+				<tfoot>
+				</tfoot>
+			</table>
+		</div>
+		
+		<h2 id = "results" align = left>Результаты стартов</h2>
+		<img src="" width="" height="" alt="">
+		
+		<div class="table2">
+			<table class="table table-striped" border = 1>
+				<thead>
+					<tr>
+						<td><b>Название старта</b></td>
+						<td><b>Вид спорта</b></td>
+						<td><b>Дата проведения</b></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><a href="C://Users/podbo/Web/files/ITOGovy_protokol_Rozhde_polumarafon_07_01_2024.xlsx" target="_blank">Рождественский забег</a></td>
+						<td>Бег</td>
+						<td>08.01.2024</td>
+					</tr>
+					<tr>
+						<td><a href="https://www.krascsp.ru/static/uploaded/files/custom_publication/rezyltati_lijnya_rossii_2024_vozrastnie_kategorii1.pdf" target="_blank">Лыжня России</a></td>
+						<td>Лыжи</td>
+						<td>10.02.2024</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		<h2 id = "trainings" align = left>Тренировки</h2>
+		<p>Беговые тренировки проводятся каждый день в 6:00 и 19:00 <br> по адресу пр. Мира 7г, возле магазина "Triatleta"</p>
+		
+		<div class = "shops">
+			<h2 id = "shops" align = left>Экипировочные магазины</h2>
+			<p>В нашем городе представлено большое количество спортивных магазинов, <br> где вы можете найти подходящую для вас экипировку под конкретный старт.</p>
+			<p>Оставим список на лучшие, по нашему скромному мнению:</p>
+			<a class = div-triatleta href="https://triatleta.ru/" target="_blank">Triatleta</a>
+			<a class = div-trial href="https://trial-sport.ru/#" target="_blank">Триал-Спорт</a>
+			<a class = div-stick href="https://stikshop.ru/" target="_blank">Stick</a>
+		</div>
+			<h2 id = "same_sites" align = left>Похожие сайты</h2>
+			<!-- Упорядоченный список -->
+				<ol>
+					<li><a href="https://krasmarafon.ru/" target="_blank">Красмарафон</a></li>
+					<li><a href="https://toplist.run/calendar" target="_blank">Toplist</a></li>
+					<li><a href="https://krastriathlon.ru/calendar/" target="_blank">Федерация триатлона г. Красноярска</a></li>
+				</ol>
+		
+		<div id="reg_form" class="container mt-5">
+			<h2 class="text-left mb-4">Подписка на рассылку</h2>
+			<form>
+				<div class="form-group">
+					<label for="name">Имя Фамилия</label>
+					<input type="text" class="form-control" id="name" placeholder="Введите Имя и Фамилию"> 
+				</div>
+				<div class="form-group">	</div>
+				<div class="form-group">
+					<label for="email">Электронная почта</label>
+					<input type="email" class="form-control" id="email" placeholder="Введите email">
+				</div>
+				<div class="form-group">
+					<label for="phone">Номер телефона</label>
+					<input type="tel" class="form-control" id="phone" placeholder="Введите номер телефона">
+				</div>
+				<button type="submit" class="btn btn-primary">Подписаться на рассылку</button>
+			</form>
+		</div>
+		
+		<!-- <div class = footer>
+			<a href = #>Наверх</a>
+		</div> -->
+	</body>
+</html>

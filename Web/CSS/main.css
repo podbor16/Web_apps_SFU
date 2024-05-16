@@ -1,0 +1,215 @@
+/*Импорт шрифта*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+.p_bold{
+	font-weight: bold;
+
+}
+
+p{
+	width: 400px;
+}
+
+.disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
+}
+
+.enabled {
+	background-color: #4CAF50;
+	cursor: pointer;
+}
+
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+
+.slider {
+	position: relative;
+	width: 500px;
+	overflow: hidden;
+}
+
+.slider-images {
+	display: flex;
+	transition: transform 0.5s ease;
+}
+
+.slider-image {
+	width: 500px;
+	height: 350px;
+	flex-shrink: 0;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #f8f8f8;
+  word-spacing: 100px;
+  text-align: center;
+  background: url('https://disk.yandex.ru/i/D7DD6tO4OxW65g')
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #7B605C;
+  text-align: center
+}
+
+button{
+	align-items: center;
+}
+
+.JS{
+	align-items: center;
+	width: 500px;
+}
+
+.div-triatleta{
+	float: left;
+	width: 150px
+}
+
+.div-trial{
+	float: left;
+	width: 150px
+}
+
+.div-stick{
+	float:left;
+	width: 150px
+}
+
+.table2{
+	border: 1px solid black;
+	width: 500px
+}
+
+h2{
+	width: 500px;
+}
+
+#reg_form{
+	width: 500px;
+	float: left;
+}
+
+tr{
+	text-align: center;
+}
+
+
+body {
+		
+	color:black;
+	background: url('https://sun9-73.userapi.com/impg/kkT0NfZaRt8OEDhFQtDYsCE6tdM_icrxUtussA/bGUiiGcP0CQ.jpg?size=2048x1188&quality=96&sign=252d6e91253cff42394da6de3fbfb464&type=album.jpg') no-repeat center top;
+	background-size: cover;
+	background-attachment: fixed;
+	/*выбор шрифта из установленных и импортированных*/
+	font-family: 'Oswald', sans-serif;
+	/*background: #70a128 url('images\site_img.jpg') no-repeat center;*/
+}
+
+/*стили для текста*/
+.main-text {
+	/*цвет текста*/
+	/*color: ;*/
+	/*выравнивание*/
+	text-align: center;
+	/*размер текста*/
+	/*font-size: ;*/ /*1.2em (во сколько раз больше стандартного размера. стандартный - 14px)*/
+	/*Стиль текста - наклонный (italic), нормальный*/
+	font-style: normal;
+	/*жирность шрифта, в зависимости от установленных*/
+	font-weight: normal;
+	
+	
+	/*Выбор регистра (lowercase, uppercase, capitalize - каждое слово с заглавной)*/
+	/*text-transform: ;*/
+	/*Пространство между словами в пикселях*/
+	/*word-spacing: ;*/
+	/*между символами*/
+	<!--letter-spacing: ;
+	/*межстрочный интервал*/
+	line-height: ;
+	/*подчеркнутый/перечеркнутый*/
+	text-decoration: ;
+	/*настройки курсора*/
+	cursor: ;-->
+}
+
+.table1{
+  /*position: relative;*/
+  border: 1px solid black;
+  width: 500px;
+  /*background-color: #f8f8f8;*/
+}
+
+.absolute-element {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-color: #ff0000;
+}
+
+/* .table1 {
+	background: url('https://avatars.mds.yandex.net/i?id=7d8205d2e6d2577ecb3a7272965217a1d6112ffb-10507506-images-thumbs&n=13') no-repeat;
+	background-size: 500px;
+} */
+
+ul {
+	font-style: italic;
+	font-weight: bold;
+}
+
+ol {
+	color: yellow;
+}
+
+h1 {
+	text-align: center;
+	font-size: 43px;
+	font-style: italic;
+	font-weight: 500;
+	letter-spacing: 3px;
+}
+
+.same_sites{
+	text-align: left
+}
+
+a {
+	color: #0b0270;
+	text-decoration: none;
+}
+
+/*псевдокласс который применяется при наведении*/
+a:hover {
+	text-decoration:underline;
+	text-decoration-color: #0b0270;
+	cursor: pointer;
+}
+
+/*псевдокласс который применяется при нажатии удержании*/
+a:active {
+	
+}
+
+/*псевдокласс который применяется на посещенные ссылки*/
+a:visited {
+	
+} 

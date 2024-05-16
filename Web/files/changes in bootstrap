@@ -1,0 +1,11 @@
+
+Смена цвета текста в navbar
+.navbar-inverse .navbar-text {
+  color: #9d9d9d;
+}
+
+Смена цвета navbar-inverse
+.navbar-inverse {
+  background-color: #EEEEE4;
+  border-color: #080808;
+}
