@@ -13,7 +13,7 @@ module.exports = function (config) {
     files: [
       'js/tests/vendor/jquery.min.js',
       'js/tooltip.js',
-      'js/!(tooltip).js',
+      //'js/!(tooltip).js',
       'js/tests/unit/*.js'
     ],
     reporters: ['dots'],
